@@ -1,0 +1,72 @@
+/* Top navigation styling */
+.nav-1 {
+    height: 2.7rem;
+    width: 100%;
+    background: #4e459a;
+    color: #fff;
+    display: flex;
+    padding: 0.5rem 8rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-1 ul {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-1 li {
+    list-style-type: none;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Main navbar container */
+.nav-2 {
+    width: 100%;
+}
+
+/* Middle section styling for logo and navbar */
+.mid-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 8rem;
+}
+
+/* Logo styling */
+.logo {
+  height: 5rem;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-1 {
+    padding: 0.5rem 1rem;
+    justify-content: center;
+  }
+  .nav-1 ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-1 li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+  .mid-image {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .logo {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
