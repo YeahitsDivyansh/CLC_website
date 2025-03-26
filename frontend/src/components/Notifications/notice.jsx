@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NotificationsSection = () => {
   return (
-    <div className="container mt-5">
+    <div  
+    className="container mt-5">
       <h3 className="text-center fw-bold mb-4">LATEST NOTIFICATIONS & EVENTS</h3>
       <div className="row">
         {/* Examinations Column */}
