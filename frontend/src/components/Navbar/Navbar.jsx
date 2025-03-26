@@ -26,7 +26,7 @@ const Nav1 = () => {
         <div className="logo">
           <img
             style={{ height: "4rem", width: "12rem" }}
-            src="/src/assets/CLC_logo1.png"
+            src="/CLC_logo1.png"
             alt="#"
           />
         </div>
