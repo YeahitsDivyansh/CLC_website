@@ -27,7 +27,7 @@ export default function WelcomeSection() {
           </div>
         </div>
         <img
-          src="/src/assets/Dr_Alka-img.jpeg"
+          src="/Dr_Alka-img.jpeg"
           alt="Prof. (Dr.) Alka Chawla"
           className="rounded-circle position-absolute bg-white"
           style={{ width: '100px', height: '100px', objectFit: 'cover', border: '2px ridge #a1a5b1a1', top: '0', transform: 'translateY(-50%)' }}
