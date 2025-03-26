@@ -4,9 +4,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import './mid-image.css';
 
 const images = [
-  "/src/assets/mid-image.jpg",
-  "/src/assets/mid-image.jpg",
-  "/src/assets/mid-image.jpg"
+  "/src/assets/campus_img1.jpg",
+  "/src/assets/campus_img2.jpg",
+  "/src/assets/campus_img3.jpg",
+  "/src/assets/campus_img4.png",
+  "/src/assets/campus_img5.jpg",
+  "/src/assets/campus_img6.jpg",
+  "/src/assets/campus_img7.png",
+  "/src/assets/campus_img8.jpg",
 ];
 
 const MidImage = () => {

@@ -19,15 +19,36 @@ const Nav1 = () => {
       </nav>
 
       {/* Middle Section: Logo and Main Navbar */}
-      <div className='mid-image'>
+      <div 
+      style={{display:"flex",
+        justifyContent:"space-between"
+      }}
+      className='mid-image'>
         <div className="logo">
-          LOGO
+        <img 
+        style={{height:"4rem",
+          width:"12rem",
+        }}
+        src="/src/assets/CLC_logo1.png" alt="#" />
         </div>
+        <div >
         <Navbar expand="lg" className="nav-2">
           <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav" /> 
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
+                <NavDropdown title="Dropdown" id="basic-nav-dropdown-1" className='ms-3'>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                </NavDropdown>
+                <NavDropdown title="Dropdown" id="basic-nav-dropdown-1" className='ms-3'>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                </NavDropdown>
                 <NavDropdown title="Dropdown" id="basic-nav-dropdown-1" className='ms-3'>
                   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -48,10 +69,13 @@ const Nav1 = () => {
                 </NavDropdown>
                 <Nav.Link className='ms-3' href="#home">Home</Nav.Link>
                 <Nav.Link className='ms-3' href="#link">Link</Nav.Link>
+                <Nav.Link className='ms-3' href="#home">Home</Nav.Link>
+                <Nav.Link className='ms-3' href="#link">Link</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
+        </div>
       </div>
     </>
   )
