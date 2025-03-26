@@ -19,99 +19,120 @@ const Nav1 = () => {
       </nav>
 
       {/* Middle Section: Logo and Main Navbar */}
-      <div className="mid-image">
-        <div className="logo">LOGO</div>
-        <Navbar expand="lg" className="nav-2">
-          <Container>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ms-auto">
-                <NavDropdown
-                  title="About Us"
-                  id="basic-nav-dropdown-1"
-                  className="ms-3"
-                >
-                  <NavDropdown.Item href="#action/3.1">
-                    About CLC
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                </NavDropdown>
-
-                <NavDropdown
-                  title="Being at CLC"
-                  id="basic-nav-dropdown-2"
-                  className="ms-3"
-                >
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                </NavDropdown>
-
-                <NavDropdown
-                  title="Forms"
-                  id="basic-nav-dropdown-3"
-                  className="ms-3"
-                >
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                </NavDropdown>
-
-                <NavDropdown
-                  title="Faculty & Staff"
-                  id="basic-nav-dropdown-3"
-                  className="ms-3"
-                >
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                </NavDropdown>
-
-                <NavDropdown
-                  title="Committees & Societies"
-                  id="basic-nav-dropdown-3"
-                  className="ms-3"
-                >
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                </NavDropdown>
-                <Nav.Link className="ms-3" href="#home">
-                  Home
-                </Nav.Link>
-                <Nav.Link className="ms-3" href="#link">
-                  Link
-                </Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
+      <div
+        style={{ display: "flex", justifyContent: "space-between" }}
+        className="mid-image"
+      >
+        <div className="logo">
+          <img
+            style={{ height: "4rem", width: "12rem" }}
+            src="/src/assets/CLC_logo1.png"
+            alt="#"
+          />
+        </div>
+        <div>
+          <Navbar expand="lg" className="nav-2">
+            <Container>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="ms-auto">
+                  <NavDropdown
+                    title="Dropdown"
+                    id="basic-nav-dropdown-1"
+                    className="ms-3"
+                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Something
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                  </NavDropdown>
+                  <NavDropdown
+                    title="Dropdown"
+                    id="basic-nav-dropdown-1"
+                    className="ms-3"
+                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Something
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                  </NavDropdown>
+                  <NavDropdown
+                    title="Dropdown"
+                    id="basic-nav-dropdown-1"
+                    className="ms-3"
+                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Something
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                  </NavDropdown>
+                  <NavDropdown
+                    title="Dropdown"
+                    id="basic-nav-dropdown-2"
+                    className="ms-3"
+                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Something
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                  </NavDropdown>
+                  <NavDropdown
+                    title="Dropdown"
+                    id="basic-nav-dropdown-3"
+                    className="ms-3"
+                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Something
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                  </NavDropdown>
+                  <Nav.Link className="ms-3" href="#home">
+                    Home
+                  </Nav.Link>
+                  <Nav.Link className="ms-3" href="#link">
+                    Link
+                  </Nav.Link>
+                  <Nav.Link className="ms-3" href="#home">
+                    Home
+                  </Nav.Link>
+                  <Nav.Link className="ms-3" href="#link">
+                    Link
+                  </Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+        </div>
       </div>
     </>
   );
