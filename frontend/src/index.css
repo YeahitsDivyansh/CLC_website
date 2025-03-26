@@ -1,6 +1,5 @@
-/* @import "tailwindcss"; */
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+@import "tailwindcss";
 
 * {
   margin: 0;

@@ -1,26 +1,38 @@
 import React from "react";
-import Nav1 from './components/Navbar/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Image from "./components/mid-image/mid-image";
-import Dr_Alka from "./components/Dr.Alka/Dr.Alka";
-import Footer from "./components/footer/Footer"
-import NotificationsSection from "./components/Notifications/notice"
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import Home from "./pages/Home";
+import SignUp from "./pages/SignUp"
+import SignIn from "./pages/SignIn"
+import Admin from "./pages/Admin";
 
 
 const App = () => {
-  return (
-    <div>
-      <Nav1/>
-      < Image/>
-      <Dr_Alka/>
-      <NotificationsSection/>
-      <Footer/>
-      
-      
-    </div>
-  )
-}
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element:<Home/>
+    },
+    {
+      path: "/signup",
+      element: <SignUp/>
+    },
+    {
+      path: "/signin",
+      element: <SignIn />
+    },
+    {
+      path: "/admin",
+      element: <Admin />
+    },
+  ]);
+
+  return <RouterProvider router={router}> </RouterProvider>;
+};
+
+export default App;
 
 
-export default App
+
+
