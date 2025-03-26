@@ -37,7 +37,24 @@ const Nav1 = () => {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
                   <NavDropdown
-                    title="Dropdown"
+                    title="About US"
+                    id="basic-nav-dropdown-1"
+                    //className="ms-3"
+                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Something
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                  </NavDropdown>
+
+                  <NavDropdown
+                    title="Being at CLC"
                     id="basic-nav-dropdown-1"
                     className="ms-3"
                   >
@@ -52,8 +69,9 @@ const Nav1 = () => {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                   </NavDropdown>
+
                   <NavDropdown
-                    title="Dropdown"
+                    title="Forms"
                     id="basic-nav-dropdown-1"
                     className="ms-3"
                   >
@@ -68,24 +86,9 @@ const Nav1 = () => {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                   </NavDropdown>
+
                   <NavDropdown
-                    title="Dropdown"
-                    id="basic-nav-dropdown-1"
-                    className="ms-3"
-                  >
-                    <NavDropdown.Item href="#action/3.1">
-                      Action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">
-                      Something
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                  </NavDropdown>
-                  <NavDropdown
-                    title="Dropdown"
+                    title="Faculty and Staff"
                     id="basic-nav-dropdown-2"
                     className="ms-3"
                   >
@@ -100,8 +103,9 @@ const Nav1 = () => {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                   </NavDropdown>
+
                   <NavDropdown
-                    title="Dropdown"
+                    title="Committees & Societies"
                     id="basic-nav-dropdown-3"
                     className="ms-3"
                   >
@@ -116,17 +120,18 @@ const Nav1 = () => {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                   </NavDropdown>
+
                   <Nav.Link className="ms-3" href="#home">
-                    Home
+                    Journal
                   </Nav.Link>
                   <Nav.Link className="ms-3" href="#link">
-                    Link
+                    Alumni
                   </Nav.Link>
                   <Nav.Link className="ms-3" href="#home">
-                    Home
+                    Achievements
                   </Nav.Link>
                   <Nav.Link className="ms-3" href="#link">
-                    Link
+                    Contact Us
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
