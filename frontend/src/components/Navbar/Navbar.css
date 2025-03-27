@@ -1,73 +1,75 @@
-/* Top navigation styling */
-.nav-1 {
-    height: 2.7rem;
-    width: 100%;
-    background: #4e459a;
-    color: #fff;
-    display: flex;
-    padding: 0.5rem 8rem;
-    justify-content: flex-start;
-    align-items: center;
+/* Top Navigation Bar Styling */
+.top-nav {
+  background: #4e459a;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
 }
 
-.nav-1 ul {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.nav-1 li {
-    list-style-type: none;
-    margin-left: 2rem;
-    display: flex;
-    align-items: center;
-}
-
-/* Main navbar container */
-.nav-2 {
-    width: 100%;
-}
-
-/* Middle section styling for logo and navbar */
-.mid-image {
+.top-nav ul {
+  list-style: none;
+  padding: 0;
+  /* margin: 0; */
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0rem;
-  width: 100%;
-}
-
-/* Logo styling */
-.logo {
-  height: 5rem;
-  width: 25%;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  background: transparent;
+  gap: 2rem;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .nav-1 {
-    padding: 0.5rem 1rem;
-    justify-content: center;
-  }
-  .nav-1 ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav-1 li {
-    margin-left: 0;
-    margin-bottom: 0.5rem;
-  }
-  .mid-image {
-    flex-direction: column;
-    padding: 1rem;
-  }
-  .logo {
-    width: 100%;
-    margin-bottom: 1rem;
+.top-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.top-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Navbar Styling */
+.main-navbar {
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 4rem;
+  width: auto;
+}
+
+.navbar-nav .nav-link, .nav-dropdown {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, .nav-dropdown:hover {
+  color: #4e459a;
+}
+
+/* Dropdown Menu */
+#nav-dropdown {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+#nav-dropdown .dropdown-item:hover {
+  background: #4e459a;
+  color: white;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 992px) {
+  .top-nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
   }
 }
