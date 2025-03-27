@@ -41,7 +41,7 @@ const Nav1 = () => {
         <Container>
           <Navbar.Brand href="#home" className="logo-container">
             <img
-              src="/src/assets/CLC_logo1.png"
+              src="/CLC_logo1.png"
               alt="CLC Logo"
               className="logo"
             />
