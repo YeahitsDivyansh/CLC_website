@@ -2,8 +2,10 @@
 .top-nav {
   background: #4e459a;
   color: white;
-  padding: 0.5rem 0;
+  padding: 0.5rem 5rem;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-nav ul {
@@ -42,7 +44,8 @@
   width: auto;
 }
 
-.navbar-nav .nav-link, .nav-dropdown {
+.navbar-nav .nav-link,
+.nav-dropdown {
   font-size: 1rem;
   font-weight: 500;
   color: #333;
@@ -50,7 +53,8 @@
   transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover, .nav-dropdown:hover {
+.navbar-nav .nav-link:hover,
+.nav-dropdown:hover {
   color: #4e459a;
 }
 
@@ -69,7 +73,7 @@
 /* Mobile Responsive Styles */
 @media (max-width: 992px) {
   .top-nav ul {
-      flex-direction: column;
-      gap: 0.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }

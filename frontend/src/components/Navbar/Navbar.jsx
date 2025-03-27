@@ -10,19 +10,41 @@ const Nav1 = () => {
   return (
     <>
       {/* Top Navigation Bar */}
-      <nav className="top-nav">
-        <ul>
-          <li><a href="#">Fee Payment Portal</a></li>
-          <li><a href="#">Law Faculty Library</a></li>
-          <li><a href="#">Prospectus</a></li>
-        </ul>
-      </nav>
+      <Nav className="top-nav">
+        <div>
+          <ul className="flex space-x-4 text-white">
+            <li>Fee Payment Portal</li>
+            <li>Law Faculty Library</li>
+            <li>Prospectus</li>
+          </ul>
+        </div>
+        <div>
+          <button className="px-3 bg-blue-500 rounded">
+            <a
+              href="/signin"
+              className="text-white"
+              style={{ textDecoration: "none" }}
+            >
+              Sign In
+            </a>
+          </button>
+        </div>
+      </Nav>
 
       {/* Main Navbar */}
-      <Navbar expand="lg" className="main-navbar sticky-top" bg="light" variant="light">
+      <Navbar
+        expand="lg"
+        className="main-navbar sticky-top"
+        bg="light"
+        variant="light"
+      >
         <Container>
           <Navbar.Brand href="#home" className="logo-container">
-            <img src="/src/assets/CLC_logo1.png" alt="CLC Logo" className="logo" />
+            <img
+              src="/src/assets/CLC_logo1.png"
+              alt="CLC Logo"
+              className="logo"
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -45,7 +67,9 @@ const Nav1 = () => {
 
               <NavDropdown title="Faculty & Staff" id="nav-dropdown">
                 <NavDropdown.Item href="#">Professors</NavDropdown.Item>
-                <NavDropdown.Item href="#">Administrative Staff</NavDropdown.Item>
+                <NavDropdown.Item href="#">
+                  Administrative Staff
+                </NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown title="Committees & Societies" id="nav-dropdown">
