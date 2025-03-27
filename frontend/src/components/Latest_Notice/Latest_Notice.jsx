@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const LatestNotices = () => {
   return (
-    <div className="container mt-3">
+    <div className="container mt-4">
       <h4 className="fw-bold text-uppercase text-center border-bottom pb-2">
         Latest Notices & Announcements
       </h4>

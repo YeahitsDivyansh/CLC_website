@@ -16,7 +16,7 @@ const images = [
 
 const MidImage = () => {
   return (
-    <div className="mid-image container mb-4">
+    <div className="mid-image container mt-4 mb-4">
       <div
         id="carouselExample"
         className="carousel slide"
