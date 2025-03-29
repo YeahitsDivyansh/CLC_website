@@ -5,25 +5,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { useNavigate } from 'react-router-dom';
-
-
-  const navigate = useNavigate();
-
-  const handleClick = (e) => {
-    e.preventDefault(); // Prevent default anchor behavior
-    navigate('.'); // Navigate using React Router
-  };
+import { Link } from "react-router-dom";
 
 const Nav1 = () => {
-  const navigate = useNavigate();
-
-  const handleClick = (e) => {
-    e.preventDefault(); // Prevent default anchor behavior
-    navigate('.'); // Navigate using React Router
-  };
-
-
   return (
     <>
       {/* Top Navigation Bar */}
@@ -57,47 +41,185 @@ const Nav1 = () => {
       >
         <Container>
           <Navbar.Brand href="#home" className="logo-container">
-            <img
-              src="/CLC_logo1.png"
-              alt="CLC Logo"
-              className="logo"
-            />
+            <img src="/CLC_logo1.png" alt="CLC Logo" className="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <NavDropdown title="About Us" id="nav-dropdown">
-                <NavDropdown.Item href="#">Our History</NavDropdown.Item>
-                <NavDropdown.Item href="#">Mission & Vision</NavDropdown.Item>
-                <NavDropdown.Item href="#">Administration</NavDropdown.Item>
+              <NavDropdown
+                title="About Us"
+                id="nav-dropdown"
+                suppressHydrationWarning
+              >
+                <NavDropdown.Item as={Link} to="/about_clc">
+                  About CLC
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/from_desk_ipc">
+                  From the Desk of PIC
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/campus">
+                  Campus
+                </NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown title="Being at CLC" id="nav-dropdown">
-                <NavDropdown.Item href="#">Student Life</NavDropdown.Item>
-                <NavDropdown.Item href="#">Campus Facilities</NavDropdown.Item>
+                <NavDropdown title="Academics" id="nav-dropdown">
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/being_at_clc/academics/course"
+                  >
+                    Course
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/being_at_clc/academics/examination_syllabus"
+                  >
+                    Examination & Syllabus
+                  </NavDropdown.Item>
+                </NavDropdown>
+
+                <NavDropdown title="Student Corner" id="nav-dropdown">
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/being_at_clc/student_corner/timetable"
+                  >
+                    Time Table & Section Allotment
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/being_at_clc/student_corner/case_material"
+                  >
+                    Case Material
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/being_at_clc/student_corner/results"
+                  >
+                    Results
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/being_at_clc/student_corner/imp_rules"
+                  >
+                    Imporant Rules
+                  </NavDropdown.Item>
+                </NavDropdown>
               </NavDropdown>
 
               <NavDropdown title="Forms" id="nav-dropdown">
-                <NavDropdown.Item href="#">Admission Forms</NavDropdown.Item>
-                <NavDropdown.Item href="#">Exam Forms</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/forms/services_for_students">
+                  Services for Students
+                </NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown title="Faculty & Staff" id="nav-dropdown">
-                <NavDropdown.Item href="#">Professors</NavDropdown.Item>
-                <NavDropdown.Item href="#">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/faculty_and_staff/faculty_members"
+                >
+                  Faculty Members
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/faculty_and_staff/guest_faculty"
+                >
+                  Guest Faculty
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/faculty_and_staff/library_faculty"
+                >
+                  Library Staff
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/faculty_and_staff/admin_staff">
                   Administrative Staff
                 </NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown title="Committees & Societies" id="nav-dropdown">
-                <NavDropdown.Item href="#">Student Committees</NavDropdown.Item>
-                <NavDropdown.Item href="#">Research Societies</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/committees_and_societies/adr">
+                  Alternative Dispute Resolution (ADR)
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/committees_and_societies/international_collaborations"
+                >
+                  Committee for International Collaboration
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/committees_and_societies/corporate_law_society"
+                >
+                  Corporate Law Society
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/committees_and_societies/criminal_law_society"
+                >
+                  Criminal Law Society
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/committees_and_societies/cultural_law_society"
+                >
+                  Cultural Law Society
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/committees_and_societies/debate_and_discussions_society"
+                >
+                  Debate & Discussions Society
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/committees_and_societies/legal_aid_society"
+                >
+                  Legal Aid Society
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/committees_and_societies/moot_court_society"
+                >
+                  Moot Court Society
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/committees_and_societies/placement_assistance_council"
+                >
+                  Placement Assistance Council
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/committees_and_societies/ipr_society"
+                >
+                  IPR Society
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/committees_and_societies/quiz_society"
+                >
+                  Quiz Society
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/committess_and_societies/other_committees"
+                >
+                  Other Committees
+                </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="#journal">Journal</Nav.Link>
-              <Nav.Link href="#alumni">Alumni</Nav.Link>
-              <Nav.Link href="#achievements">Achievements</Nav.Link>
-              <Nav.Link href="#contact">Contact Us</Nav.Link>
+              <Nav.Link as={Link} to="/journal">
+                Journal
+              </Nav.Link>
+              <Nav.Link as={Link} to="/alumni">
+                Alumni
+              </Nav.Link>
+              <Nav.Link as={Link} to="/achievements">
+                Achievements
+              </Nav.Link>
+              <Nav.Link as={Link} to="/contact">
+                Contact Us
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
