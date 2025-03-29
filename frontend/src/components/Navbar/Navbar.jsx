@@ -5,8 +5,25 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { useNavigate } from 'react-router-dom';
+
+
+  const navigate = useNavigate();
+
+  const handleClick = (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    navigate('.'); // Navigate using React Router
+  };
 
 const Nav1 = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    navigate('.'); // Navigate using React Router
+  };
+
+
   return (
     <>
       {/* Top Navigation Bar */}

@@ -76,4 +76,10 @@
     flex-direction: column;
     gap: 0.5rem;
   }
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
 }

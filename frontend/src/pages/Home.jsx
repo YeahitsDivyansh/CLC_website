@@ -6,6 +6,7 @@ import Nav1 from '../components/Navbar/Navbar'
 import Dr_Alka from "../components/Dr.Alka/Dr.Alka";
 import Achievements from "../components/Achievements/Achievements";
 import Latest_Notice from "../components/Latest_Notice/Latest_Notice";
+import At_A_Glance from "../components/At_A_Glance/At_A_Glance"
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         <Latest_Notice/>
       <Image/>
       <Dr_Alka/>
+      <At_A_Glance/>
       <Achievements/>
       <NotificationsSection/>
       <Footer/>

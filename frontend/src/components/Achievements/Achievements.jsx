@@ -42,6 +42,25 @@ const Achievements = () => {
         text: "Prof. Alka Chawla, PIC, Campus Law Centre, as Chief Guest at a one day awareness programme organised by VIPS in collaboration with USLLS, GGSIP University on Rights of Indian Women in NRI matrimonial Issues on 13.02.2014 sponsored by National Commission for Women",
         img1: "/campus_img8.jpg", // Replace with actual image paths
         img2: "/campus_img8.jpg",
+      },
+      {text: "Prof. Alka Chawla, PIC, Campus Law Centre, as Chief Guest at a one day awareness programme organised by VIPS in collaboration with USLLS, GGSIP University on Rights of Indian Women in NRI matrimonial Issues on 13.02.2014 sponsored by National Commission for Women",
+      img1: "/campus_img8.jpg", // Replace with actual image paths
+      img2: "/campus_img8.jpg",
+    },
+    {
+        text: "Prof. Alka Chawla, PIC, Campus Law Centre, as Chief Guest at a one day awareness programme organised by VIPS in collaboration with USLLS, GGSIP University on Rights of Indian Women in NRI matrimonial Issues on 13.02.2014 sponsored by National Commission for Women",
+        img1: "/campus_img8.jpg", // Replace with actual image paths
+        img2: "/campus_img8.jpg",
+      },
+      {
+        text: "Prof. Alka Chawla, PIC, Campus Law Centre, as Chief Guest at a one day awareness programme organised by VIPS in collaboration with USLLS, GGSIP University on Rights of Indian Women in NRI matrimonial Issues on 13.02.2014 sponsored by National Commission for Women",
+        img1: "/campus_img8.jpg", // Replace with actual image paths
+        img2: "/campus_img8.jpg",
+      },
+      {
+        text: "Prof. Alka Chawla, PIC, Campus Law Centre, as Chief Guest at a one day awareness programme organised by VIPS in collaboration with USLLS, GGSIP University on Rights of Indian Women in NRI matrimonial Issues on 13.02.2014 sponsored by National Commission for Women",
+        img1: "/campus_img8.jpg", // Replace with actual image paths
+        img2: "/campus_img8.jpg",
       }
   ];
 
@@ -49,7 +68,11 @@ const Achievements = () => {
     <div
       className="d-flex justify-content-center align-items-center"
       style={{ padding: "5.5rem" }}
-    >
+    ><div>
+      <h2>Achievements</h2>
+      <hr 
+  
+      />
       <div className="position-relative" style={{ maxWidth: "100rem" }}>
         <Carousel
           className="w-100 h-100"
@@ -100,6 +123,7 @@ const Achievements = () => {
         >
           <FiChevronRight />
         </button>
+      </div>
       </div>
     </div>
   );

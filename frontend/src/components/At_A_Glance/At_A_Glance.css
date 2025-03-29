@@ -1,0 +1,27 @@
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+    .statistics{
+        display: flex;
+        justify-content: center;
+    }
+    .statistics_img1{
+        padding-right: 4rem;
+
+    }
+    .statistics_img1 img{
+        height: 10rem;
+        width: 15rem;
+    }
+    .statistics_img2{
+        padding-right: 2.2rem;
+
+    }
+    .statistics_img2 img{
+        height: 11rem;
+        width: 17rem;
+    }
+    .statistics_img3 img{
+        height: 11rem;
+        width: 18rem;
+    }
+  }
