@@ -33,7 +33,7 @@ import Quiz_Society from "./DropdownRoutes/Committees_And_Societies/Quiz_Society
 import Other_committees from "./DropdownRoutes/Committees_And_Societies/Other_committees";
 import Journal from "./DropdownRoutes/Journal";
 import Achievements from "./DropdownRoutes/Achievements";
-import Alumni from "./DropdownRoutes/Alumni";
+import Alumni from "./DropdownRoutes/alumni";
 import ContactUs from "./DropdownRoutes/ContactUs";
 
 const App = () => {
