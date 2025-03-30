@@ -22,7 +22,7 @@ const Nav1 = () => {
         <div>
           <button className="px-3 bg-blue-500 rounded">
             <a
-              href="/signin"
+              href="https://strapi-server-app-xw9w.onrender.com/admin"
               className="text-white"
               style={{ textDecoration: "none" }}
             >

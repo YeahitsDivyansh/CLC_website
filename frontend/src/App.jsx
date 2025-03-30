@@ -35,6 +35,12 @@ import Journal from "./DropdownRoutes/Journal";
 import Achievements from "./DropdownRoutes/Achievements";
 import Alumni from "./DropdownRoutes/Alumni";
 import ContactUs from "./DropdownRoutes/ContactUs";
+import AdminStaff from "./pages/AdminStaff";
+import LibraryStaff from "./pages/LibraryStaff";
+import Faculty from "./pages/Faculty";
+import Announcements from "./pages/Announcements";
+import Examinations from "./pages/Examinations";
+import Lectures from "./pages/Lectures";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -173,6 +179,30 @@ const App = () => {
     {
       path: "/admin",
       element: <Admin />,
+    },
+    {
+      path: "/adminstaff",
+      element: <AdminStaff/>
+    },
+    {
+      path: "/librarystaff",
+      element: <LibraryStaff/>
+    },
+    {
+      path: "/faculty",
+      element: <Faculty/>
+    },
+    {
+      path: "/announcements/:documentId",
+      element: <Announcements/>
+    },
+    {
+      path: "/examinations/:documentId",
+      element: <Examinations/>
+    },
+    {
+      path: "/lectures/:documentId",
+      element: <Lectures/>
     },
   ]);
 

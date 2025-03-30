@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 import { getAnalytics } from "firebase/analytics";
@@ -14,7 +14,8 @@ const firebaseConfig = {
   measurementId: "G-9GW8BH44RM",
 };
 
-const app = initializeApp(firebaseConfig);
+// Initialize Firebase only if it's not already initialized
+const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const storage = getStorage(app);
 const analytics = getAnalytics(app);
@@ -22,7 +23,7 @@ const auth = getAuth(app);
 
 export { db, storage, analytics, auth };
 
-// Function to fetch data from Firestore
+// Function to fetch data from a given Firestore collection
 export async function fetchData(collectionName) {
   try {
     const querySnapshot = await getDocs(collection(db, collectionName));
@@ -34,13 +35,15 @@ export async function fetchData(collectionName) {
   }
 }
 
-// Function to get file URL from Firebase Storage
-export async function getFileUrl(filePath) {
-  try {
-    const fileRef = ref(storage, filePath);
-    return await getDownloadURL(fileRef);
-  } catch (error) {
-    console.error("Error getting file URL:", error);
-    return null;
-  }
+// Fetch Announcements, Lectures_Seminars, and Examinations
+export async function fetchAnnouncements() {
+  return fetchData("Announcement");
+}
+
+export async function fetchLecturesSeminars() {
+  return fetchData("Lectures_Seminars");
+}
+
+export async function fetchExaminations() {
+  return fetchData("Examinations");
 }

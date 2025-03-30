@@ -57,12 +57,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="https://lawfaculty.du.ac.in/" className="text-white text-decoration-none">
                   Faculty of Law
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="https://www.du.ac.in/" className="text-white text-decoration-none">
                   University of Delhi
                 </a>
               </li>
@@ -101,12 +101,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="https://fee.du.ac.in/index.php/site/login" className="text-white text-decoration-none">
                   Fee Payment
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="https://lawfaculty.du.ac.in/Students/LL.B.-Course-Materials" className="text-white text-decoration-none">
                   Case Material
                 </a>
               </li>
@@ -118,17 +118,17 @@ const Footer = () => {
             <h5 className="fw-bold">Community</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/faculty" className="text-white text-decoration-none">
                   Faculty
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/librarystaff" className="text-white text-decoration-none">
                   Library Staff
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/adminstaff" className="text-white text-decoration-none">
                   Administrative Staff
                 </a>
               </li>
