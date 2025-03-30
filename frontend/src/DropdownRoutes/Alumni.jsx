@@ -1,7 +1,7 @@
 import React from "react";
 
-const alumni = () => {
+const Alumni = () => {
   return <div>Alumni</div>;
 };
 
-export default alumni;
+export default Alumni;
