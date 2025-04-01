@@ -40,7 +40,7 @@ const Nav1 = () => {
         variant="light"
       >
         <Container>
-          <Navbar.Brand href="#home" className="logo-container">
+          <Navbar.Brand href="/" className="logo-container">
             <img src="/CLC_logo1.png" alt="CLC Logo" className="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
