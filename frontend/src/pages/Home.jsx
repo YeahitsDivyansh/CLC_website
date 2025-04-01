@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "../components/mid-image/mid-image";
-import Footer from "../components/footer/Footer";
 import NotificationsSection from "../components/Notifications/notice";
 import Dr_Alka from "../components/Dr.Alka/Dr.Alka";
 import Achievements from "../components/Achievements/Achievements";
@@ -16,7 +15,6 @@ const Home = () => {
       <At_A_Glance />
       <Achievements />
       <NotificationsSection />
-      <Footer />
     </div>
   );
 };
