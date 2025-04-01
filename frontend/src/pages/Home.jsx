@@ -1,27 +1,24 @@
-import React from 'react'
+import React from "react";
 import Image from "../components/mid-image/mid-image";
-import Footer from "../components/footer/Footer"
-import NotificationsSection from "../components/Notifications/notice"
-import Nav1 from '../components/Navbar/Navbar'
+import Footer from "../components/footer/Footer";
+import NotificationsSection from "../components/Notifications/notice";
 import Dr_Alka from "../components/Dr.Alka/Dr.Alka";
 import Achievements from "../components/Achievements/Achievements";
 import Latest_Notice from "../components/Latest_Notice/Latest_Notice";
-import At_A_Glance from "../components/At_A_Glance/At_A_Glance"
-
+import At_A_Glance from "../components/At_A_Glance/At_A_Glance";
 
 const Home = () => {
   return (
     <div>
-        <Nav1/>
-        <Latest_Notice/>
-      <Image/>
-      <Dr_Alka/>
-      <At_A_Glance/>
-      <Achievements/>
-      <NotificationsSection/>
-      <Footer/>
+      <Latest_Notice />
+      <Image />
+      <Dr_Alka />
+      <At_A_Glance />
+      <Achievements />
+      <NotificationsSection />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

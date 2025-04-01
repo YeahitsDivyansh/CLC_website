@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
@@ -41,172 +40,103 @@ import Faculty from "./pages/Faculty";
 import Announcements from "./pages/Announcements";
 import Examinations from "./pages/Examinations";
 import Lectures from "./pages/Lectures";
+import Layout from "./components/Layout";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />, // Wrapping everything in Layout
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/about_clc", element: <About_CLC /> },
+      { path: "/from_desk_ipc", element: <From_Desk_IPC /> },
+      { path: "/campus", element: <Campus /> },
+      { path: "/being_at_clc/academics/course", element: <Course /> },
+      {
+        path: "/being_at_clc/academics/examination_syllabus",
+        element: <ExamAndSyll />,
+      },
+      {
+        path: "/being_at_clc/student_corner/timetable",
+        element: <TimeTable />,
+      },
+      {
+        path: "/being_at_clc/student_corner/case_material",
+        element: <CaseMaterial />,
+      },
+      { path: "/being_at_clc/student_corner/results", element: <Results /> },
+      {
+        path: "/being_at_clc/student_corner/imp_rules",
+        element: <Imp_Rules />,
+      },
+      {
+        path: "/forms/services_for_students",
+        element: <Services_for_Students />,
+      },
+      { path: "/faculty_and_staff/faculty_members", element: <Faculty_mem /> },
+      { path: "/faculty_and_staff/guest_faculty", element: <Guest_fac /> },
+      {
+        path: "/faculty_and_staff/library_faculty",
+        element: <Library_Staff />,
+      },
+      { path: "/faculty_and_staff/admin_staff", element: <Admin_staff /> },
+      { path: "/committees_and_societies/adr", element: <ADR /> },
+      {
+        path: "/committees_and_societies/international_collaborations",
+        element: <International_Collab />,
+      },
+      {
+        path: "/committees_and_societies/criminal_law_society",
+        element: <Criminal_Law_Society />,
+      },
+      {
+        path: "/committees_and_societies/cultural_law_society",
+        element: <Cultural_Law_Society />,
+      },
+      {
+        path: "/committees_and_societies/debate_and_discussions_society",
+        element: <Debate_and_Discussions_Society />,
+      },
+      {
+        path: "/committees_and_societies/legal_aid_society",
+        element: <Legal_aid_society />,
+      },
+      {
+        path: "/committees_and_societies/moot_court_society",
+        element: <Moot_court_society />,
+      },
+      {
+        path: "/committees_and_societies/placement_assistance_council",
+        element: <Placement_assistance_council />,
+      },
+      { path: "/committees_and_societies/ipr_society", element: <IPR /> },
+      {
+        path: "/committees_and_societies/quiz_society",
+        element: <Quiz_Society />,
+      },
+      {
+        path: "/committees_and_societies/other_committees",
+        element: <Other_committees />,
+      },
+      { path: "/journal", element: <Journal /> },
+      { path: "/achievements", element: <Achievements /> },
+      { path: "/alumni", element: <Alumni /> },
+      { path: "/contact", element: <ContactUs /> },
+      { path: "/signup", element: <SignUp /> },
+      { path: "/signin", element: <SignIn /> },
+      { path: "/admin", element: <Admin /> },
+      { path: "/adminstaff", element: <AdminStaff /> },
+      { path: "/librarystaff", element: <LibraryStaff /> },
+      { path: "/faculty", element: <Faculty /> },
+      { path: "/announcements/:documentId", element: <Announcements /> },
+      { path: "/examinations/:documentId", element: <Examinations /> },
+      { path: "/lectures/:documentId", element: <Lectures /> },
+    ],
+  },
+]);
 
 const App = () => {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/about_clc",
-      element: <About_CLC />,
-    },
-    {
-      path: "/from_desk_ipc",
-      element: <From_Desk_IPC />,
-    },
-    {
-      path: "/campus",
-      element: <Campus />,
-    },
-    {
-      path: "/being_at_clc/academics/course",
-      element: <Course />,
-    },
-    {
-      path: "/being_at_clc/academics/examination_syllabus",
-      element: <ExamAndSyll />,
-    },
-    {
-      path: "being_at_clc/student_corner/timetable",
-      element: <TimeTable />,
-    },
-    {
-      path: "/being_at_clc/student_corner/case_material",
-      element: <CaseMaterial />,
-    },
-    {
-      path: "/being_at_clc/student_corner/results",
-      element: <Results />,
-    },
-    {
-      path: "/being_at_clc/student_corner/imp_rules",
-      element: <Imp_Rules />,
-    },
-    {
-      path: "/forms/services_for_students",
-      element: <Services_for_Students />,
-    },
-    {
-      path: "/faculty_and_staff/faculty_members",
-      element: <Faculty_mem />,
-    },
-    {
-      path: "/faculty_and_staff/guest_faculty",
-      element: <Guest_fac />,
-    },
-    {
-      path: "/faculty_and_staff/library_faculty",
-      element: <Library_Staff />,
-    },
-    {
-      path: "/faculty_and_staff/admin_staff",
-      element: <Admin_staff />,
-    },
-    {
-      path: "/committees_and_societies/adr",
-      element: <ADR />,
-    },
-    {
-      path: "/committees_and_societies/international_collaborations",
-      element: <International_Collab />,
-    },
-    {
-      path: "/committees_and_societies/corporate_law_society",
-      element: <International_Collab />,
-    },
-    {
-      path: "/committees_and_societies/criminal_law_society",
-      element: <Criminal_Law_Society />,
-    },
-    {
-      path: "/committees_and_societies/cultural_law_society",
-      element: <Cultural_Law_Society />,
-    },
-    {
-      path: "/committees_and_societies/debate_and_discussions_society",
-      element: <Debate_and_Discussions_Society />,
-    },
-    {
-      path: "/committees_and_societies/legal_aid_society",
-      element: <Legal_aid_society />,
-    },
-    {
-      path: "/committees_and_societies/moot_court_society",
-      element: <Moot_court_society />,
-    },
-    {
-      path: "/committees_and_societies/placement_assistance_council",
-      element: <Placement_assistance_council />,
-    },
-    {
-      path: "/committees_and_societies/ipr_society",
-      element: <IPR />,
-    },
-    {
-      path: "/committees_and_societies/quiz_society",
-      element: <Quiz_Society />,
-    },
-    {
-      path: "/committess_and_societies/other_committees",
-      element: <Other_committees />,
-    },
-    {
-      path: "/journal",
-      element: <Journal />,
-    },
-    {
-      path: "/achievements",
-      element: <Achievements />,
-    },
-    {
-      path: "/alumni",
-      element: <Alumni />,
-    },
-    {
-      path: "/contact",
-      element: <ContactUs />,
-    },
-    {
-      path: "/signup",
-      element: <SignUp />,
-    },
-    {
-      path: "/signin",
-      element: <SignIn />,
-    },
-    {
-      path: "/admin",
-      element: <Admin />,
-    },
-    {
-      path: "/adminstaff",
-      element: <AdminStaff/>
-    },
-    {
-      path: "/librarystaff",
-      element: <LibraryStaff/>
-    },
-    {
-      path: "/faculty",
-      element: <Faculty/>
-    },
-    {
-      path: "/announcements/:documentId",
-      element: <Announcements/>
-    },
-    {
-      path: "/examinations/:documentId",
-      element: <Examinations/>
-    },
-    {
-      path: "/lectures/:documentId",
-      element: <Lectures/>
-    },
-  ]);
-
-  return <RouterProvider router={router}> </RouterProvider>;
+  return <RouterProvider router={router} />;
 };
 
 export default App;
