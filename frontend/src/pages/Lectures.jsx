@@ -35,9 +35,9 @@ const Lectures = () => {
     }, [documentId]); // Add dependency
   return (
     <>
-      <Nav1/>
+     
       <LectureImage title={title} date={date} url={url}/>
-      <Footer/>
+    
     </>
   )
 }
