@@ -87,19 +87,19 @@ const Nav1 = () => {
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     as={Link}
-                    to="/being_at_clc/student_corner/case_material"
+                    to="https://lawfaculty.du.ac.in/Students/LL.B.-Course-Materials"
                   >
                     Case Material
                   </NavDropdown.Item>
                   <NavDropdown.Item
-                    as={Link}
-                    to="/being_at_clc/student_corner/results"
+                    as={Link} 
+                    to="https://durslt.du.ac.in/AC_INTERNET_Marksheet_NDB/Students/Combine_GradeCard.aspx"
                   >
                     Results
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     as={Link}
-                    to="/being_at_clc/student_corner/imp_rules"
+                    to="https://lawfaculty.du.ac.in/Students/Important-Rules"
                   >
                     Imporant Rules
                   </NavDropdown.Item>
