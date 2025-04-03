@@ -32,9 +32,8 @@ const Examinations = () => {
 
     return (
         <>
-        <Nav1/>
-        <Documents title={title} date={date} url={url}/>
-        <Footer/>
+         <Documents title={title} date={date} url={url}/>
+        
         </>
     );
 }
