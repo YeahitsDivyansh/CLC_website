@@ -33,9 +33,9 @@ const Announcements = () => {
 
     return (
       <>
-        <Nav1/>
+       
         <Documents title={title} date={date} url={url}/>
-        <Footer/>
+ 
       </>
     );
 }
