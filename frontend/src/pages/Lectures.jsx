@@ -18,7 +18,7 @@ const Lectures = () => {
                 const { data } = await axios.get(`${server}/api/lectures-webinars/${documentId}?populate=*`);
                 setTitle(data.data.Title); // Corrected key
                 setDate(data.data.Published_Date); // Corrected key
-                setUrl(data.data.Lectures[0]?.url || ""); // Get first URL safely
+                setUrl(data.data.Lectures?.url || ""); // Get first URL safely
 
 
                 console.log(title);
