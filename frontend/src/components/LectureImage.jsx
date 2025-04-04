@@ -15,7 +15,7 @@ const LectureImage = ({ title, date, url }) => {
 
           <div className="relative overflow-hidden px-4 md:px-8">
             <img
-              src={`${server}${url}`}
+              src={`${url}`}
               alt="Document Image"
               className="w-3/4 md:w-2/3 mx-auto border-2 border-gray-700 rounded-lg shadow-lg"
               style={{ objectFit: "contain" }}
