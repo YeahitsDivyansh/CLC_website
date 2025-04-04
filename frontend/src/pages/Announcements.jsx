@@ -18,7 +18,7 @@ const Announcements = () => {
                 const { data } = await axios.get(`${server}/api/announcements/${documentId}?populate=*`);
                 setTitle(data.data.Title); // Corrected key
                 setDate(data.data.Published_Date); // Corrected key
-                setUrl(data.data.Hyperlink[0]?.url || ""); // Get first URL safely
+                setUrl(data.data.Hyperlink?.url || ""); // Get first URL safely
 
              
 
