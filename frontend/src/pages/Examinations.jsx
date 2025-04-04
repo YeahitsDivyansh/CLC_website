@@ -18,7 +18,7 @@ const Examinations = () => {
                 const { data } = await axios.get(`${server}/api/examinations/${documentId}?populate=*`);
                 setTitle(data.data.Title); // Corrected key
                 setDate(data.data.Published_Date); // Corrected key
-                setUrl(data.data.Examination_pdf[0]?.url || ""); // Get first URL safely
+                setUrl(data.data.Examination_pdf?.url || ""); // Get first URL safely
  
 
 
