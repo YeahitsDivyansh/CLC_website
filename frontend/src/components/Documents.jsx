@@ -15,7 +15,7 @@ const Documents = ({title , date ,url}) => {
                     <p className="text-black mb-4">{date}</p>
                     <div className="relative overflow-hidden rounded-lg shadow-lg">
                         <iframe
-                            src={`${server}${url}`}
+                            src={`${url}`}
                             className="w-full h-[80vh] md:h-[90vh] border-2 border-gray-700 rounded-lg shadow-lg transition-transform duration-300"
                             title="PDF Document"
                             style={{ transform: "scale(1)", transformOrigin: "top left" }}
