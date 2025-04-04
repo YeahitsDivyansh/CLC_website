@@ -8,7 +8,7 @@ import { AuthProvider } from './context/AuthContext.jsx';
 import { NotificationsContextProvider } from './context/NotificationContext.jsx';
 
 
-export const server = "https://strapi-server-app-xw9w.onrender.com";
+export const server = "https://strapi-server-hdbj.onrender.com";
 
 createRoot(document.getElementById('root')).render(
   <AuthProvider>
